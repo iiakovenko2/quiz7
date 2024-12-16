@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>შემაჯამებელი წერა 7</title>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<h1 id="header">შემაჯამებელი წერა 7</h1>
+	</header>
+	<div id="timer">დარჩენილია 45 წუთი და 60 წამი</div> <!-- Timer display -->
+	<main>
+		<form id="quizForm">
+			<!-- Question 1 -->
+			<div class="question" id="question1"> <strong> (1) 1. </strong> <br>
+                \( 1+\frac{5}{10}+\frac{3}{100}+\frac{9}{1000}\)
+				<div> </div>
+				<div>
+					<input type="radio" name="q1" value="ა" id="q1a"><label for="q1a"> ა) \( 1,539\)
+					</label><br>
+					<input type="radio" name="q1" value="ბ" id="q1b"><label for="q1b"> ბ) \( 1,5309\)
+					</label><br>
+					<input type="radio" name="q1" value="გ" id="q1c"><label for="q1c"> გ) \( 1,5039\)
+					</label><br>
+					<input type="radio" name="q1" value="დ" id="q1d"><label for="q1d"> დ) \( 1,50309\)
+					</label>
+				</div>
+			</div>
+
+			<!-- Question 2 -->
+			<div class="question" id="question2">
+				<strong> (1) 2. </strong> <br>
+				\(n\)-ის რამდენი მთელი მნიშვნელობა არსებობს, რომლისთვისაც \( \frac{5n^2+2n+3}{n}\) გამოსახულება მთელი რიცხვია?
+				<div> </div>
+				<div>
+					<input type="radio" name="q2" value="ა" id="q2a"><label for="q2a"> ა) \(6\) </label><br>
+					<input type="radio" name="q2" value="ბ" id="q2b"><label for="q2b"> ბ) \(5\) </label><br>
+					<input type="radio" name="q2" value="გ" id="q2c"><label for="q2c"> გ) \(4\) </label><br>
+					<input type="radio" name="q2" value="დ" id="q2d"><label for="q2d"> დ) \(3\) </label>
+				</div>
+			</div>
+
+			<!-- Question 3 -->
+			<div class="question" id="question3">
+				<strong> (1) 3. </strong> <br>
+				მგზავრმა გზის \( \frac{3}{8}\) ნაწილი \( 6\) საათში გაიარა. რამდენ საათში გაივლიდა ის დარჩენილ ნაწილს, თუ სიჩქარეს \(2\)-ჯერ გაზრდიდა?
+                
+				<div> </div>
+				<div>
+					<input type="radio" name="q3" value="ა" id="q3a"><label for="q3a"> ა) \( \frac{5}{3}\) </label><br>
+					<input type="radio" name="q3" value="ბ" id="q3b"><label for="q3b">ბ) \(5\) </label><br>
+					<input type="radio" name="q3" value="გ" id="q3c"><label for="q3c">გ) \(6\) </label><br>
+					<input type="radio" name="q3" value="დ" id="q3d"><label for="q3d">დ) \(3\) </label>
+				</div>
+			</div>
+
+			<!-- Question 4 -->
+			<div class="question" id="question4">
+				<strong> (1) 4. </strong> <br>
+				\(x\)-ის რა მნიშვნელობისთვისაა \( \frac{\sqrt{x}-\sqrt{2}}{x-2}\) გამოსახულების მნიშვნელობა უდიდესი?
+
+				
+				<div> </div>
+				<div>
+					<input type="radio" name="q4" value="ა" id="q4a"><label for="q4a">ა) \( 0\) </label><br>
+					<input type="radio" name="q4" value="ბ" id="q4b"><label for="q4b">ბ) \( 8\) </label><br>
+					<input type="radio" name="q4" value="გ" id="q4c"><label for="q4c">გ) \( 4\)  </label><br>
+					<input type="radio" name="q4" value="დ" id="q4d"><label for="q4d">დ) \( 1\) </label>
+				</div>
+			</div>
+
+			<!-- Question 5 -->
+			<div class="question" id="question5">
+				<strong> (1) 5. </strong> <br>
+				 \(A\) და \(B\) წერტილებიდან \(l\) წრფემდე მანძილები შებამისად \(20\) სმ-ისა და \(16\) სმ-ის ტოლია. რისი ტოლია მანძილი \(AB\) მონაკვეთის შუა წერტილიდან \(l\) წრფემდე?     <br> <img class="image" id="image11" src="midline.png" img/>
+				<div> </div>
+				<div>
+					<input type="radio" name="q5" value="ა" id="q5a"><label for="q5a">ა) \(4\) სმ </label><br>
+					<input type="radio" name="q5" value="ბ" id="q5b"><label for="q5b">ბ) \( 2\) სმ</label><br>
+					<input type="radio" name="q5" value="გ" id="q5c"><label for="q5c">გ) \( 11\) სმ </label><br>
+					<input type="radio" name="q5" value="დ" id="q5d"><label for="q5d">დ) \( 6\) სმ</label>
+				</div>
+			</div>
+
+			<!-- Question 6 -->
+			<div class="question" id="question6">
+				<strong> (1) 6. </strong> <br>
+				რომელ საკოორდინატო მეოთხედშია მოთავსებული \(y=(1-\sqrt{2})x\) ფუნქციის გრაფიკი?
+				<div> </div>
+				<div>
+					<input type="radio" name="q6" value="ა" id="q6a"><label for="q6a">ა) I და III  </label><br>
+					<input type="radio" name="q6" value="ბ" id="q6b"><label for="q6b">ბ) II და IV  </label><br>
+					<input type="radio" name="q6" value="გ" id="q6c"><label for="q6c">გ) I,III და IV  </label><br>
+					<input type="radio" name="q6" value="დ" id="q6d"><label for="q6d">დ) II, III და IV  </label>
+				</div>
+			</div>
+
+			<!-- Question 7 -->
+			<div class="question" id="question7">
+				<strong> (1) 7. </strong> <br>
+				მოცემულია \(x=\frac{5}{9}n^5n^{-7}\).როგორ შეიცვლება \(x\), თუ \(n\)-ის მნიშვნელობას გავზრდით 6-ჯერ?
+				<div> </div>
+				<div>
+					<input type="radio" name="q7" value="ა" id="q7a"><label for="q7a">ა) შემცირდება 36-ჯერ </label><br>
+					<input type="radio" name="q7" value="ბ" id="q7b"><label for="q7b">ბ) შემცირდება 324-ჯერ</label><br>
+					<input type="radio" name="q7" value="გ" id="q7c"><label for="q7c">გ) გაიზრდება 6-ჯერ</label><br>
+					<input type="radio" name="q7" value="დ" id="q7d"><label for="q7d">დ) გაიზრდება 36-ჯერ</label>
+				</div>
+			</div>
+
+			<!-- Question 8 -->
+			<div class="question" id="question8">
+				<strong> (1) 8. </strong> <br>
+				რამდენი სიმეტრიის ღერძი აქვს რომბს? 
+				<div> </div>
+				<div>
+					<input type="radio" name="q8" value="ა" id="q8a"><label for="q8a">ა) \( 1 \)</label><br>
+					<input type="radio" name="q8" value="ბ" id="q8b"><label for="q8b">ბ) \( 2 \)</label><br>
+					<input type="radio" name="q8" value="გ" id="q8c"><label for="q8c">გ) \( 3\)</label><br>
+					<input type="radio" name="q8" value="დ" id="q8d"><label for="q8d">დ) \( 4\)</label>
+				</div>
+			</div>
+
+			<!-- Question 9 -->
+			<div class="question" id="question9">
+				<strong> (1) 9. </strong> <br>
+				\(1-\log_5{(x+3)}=\log_5{2}\) განტოლების ამონახსნია: 
+				<div>
+					<input type="radio" name="q9" value="ა" id="q9a"><label for="q9a">ა) \( \frac{1}{2}\) </label><br>
+					<input type="radio" name="q9" value="ბ" id="q9b"><label for="q9b">ბ) \( -\frac{1}{2} \) </label><br>
+					<input type="radio" name="q9" value="გ" id="q9c"><label for="q9c">გ) \( -1 \) </label><br>
+					<input type="radio" name="q9" value="დ" id="q9d"><label for="q9d">დ) \(1\) </label>
+				</div>
+			</div>
+
+			<!-- Question 10 -->
+			<div class="question" id="question10">
+				<strong> (1) 10. </strong> <br>
+				\(ABCD\) მართკუთხა ტრაპეციაში \(AD+BC=20\), \(AB+CD=18\) და \(\angle{CDA}=30^\circ\). რისი ტოლია ტრაპეციის ფართობი?<br> <img class="image" id="image11" src="trapezoid.png" img/>
+				<div> </div>
+				<div>
+					<input type="radio" name="q10" value="ა" id="q10a"><label for="q10a">ა) \( 120 \) </label><br>
+					<input type="radio" name="q10" value="ბ" id="q10b"><label for="q10b">ბ) \( 60\)</label><br>
+					<input type="radio" name="q10" value="გ" id="q10c"><label for="q10c">გ) \( 180 \)</label><br>
+					<input type="radio" name="q10" value="დ" id="q10d"><label for="q10d">დ) \( 90 \)</label>
+				</div>
+			</div>
+
+			<!-- Question 11 -->
+			<div class="question" id="question11"> 
+				
+				<strong> (1) 11. </strong> <br>
+				არითმეტიკულ პროგრესიაში მეცხრე წევრი \(29\)-ის ტოლია, პირველი \(11\) წევრის ჯამია \(187\). რისი ტოლია ამ არითმეტიკული პროგრესიის მეცხრე, მეთერთმეტე და მეთვრამეტე წევრების ჯამი?
+				
+				<div id="question11_options"> 
+					<input type="radio" name="q11" value="ა" id="q11a"><label for="q11a">ა) \( 210 \)</label> <br>  
+					<input type="radio" name="q11" value="ბ" id="q11b"><label for="q11b">ბ) \( 216 \)</label><br>
+					<input type="radio" name="q11" value="გ" id="q11c"><label for="q11c">გ) \( 131 \)</label><br>
+					<input type="radio" name="q11" value="დ" id="q11d"><label for="q11d">დ) \( 204 \)</label> 
+				</div>
+			</div>
+
+			<!-- Question 12 -->
+			<div class="question" id="question12">
+				<strong> (1) 12. </strong> <br> 
+				სურათზე გამოსახული ერთ-ერთი წრფის განტოლებაა \(y=\frac{1}{2}x-3\). <br> 
+                რომელია ეს წრფე? <br>
+                <img class="image" id="image11" src="lines.png" img/>
+				<div>
+					<input type="radio" name="q12" value="ა" id="q12a"><label for="q12a">ა) \(a  \)</label><br>
+					<input type="radio" name="q12" value="ბ" id="q12b"><label for="q12b">ბ) \( b \)</label><br>
+					<input type="radio" name="q12" value="გ" id="q12c"><label for="q12c">გ) \( c \)</label><br>
+					<input type="radio" name="q12" value="დ" id="q12d"><label for="q12d">დ) \( d\)</label>
+				</div>
+			</div>
+			<!-- Question 13 -->
+			<div class="question" id="question13">
+				<strong> (1) 13. </strong> <br>
+				იპოვეთ \(ABC\) სამკუთხედის \(AC\) ჰიპოტენუზის სიგრძე, თუ სამკუთხედის უმცირესი კათეტის სიგრძეა \(2\sqrt{3}\) 
+                და სამკუთხედის კუთხეების შეფარდებაა \(1:2:3\).
+					<div>
+						<input type="radio" name="q13" value="ა" id="q13a"><label for="q13a">ა) \( 4\sqrt{3} \)</label><br>
+						<input type="radio" name="q13" value="ბ" id="q13b"><label for="q13b">ბ) \( 6\sqrt{3} \)</label><br>
+						<input type="radio" name="q13" value="გ" id="q13c"><label for="q13c">გ) \(  4 \)</label><br>
+						<input type="radio" name="q13" value="დ" id="q13d"><label for="q13d">დ) \( 6 \)</label>
+					</div>
+			</div>
+			<!-- Question 14 -->
+			<div class="question" id="question14">
+				<strong> (1) 14. </strong> <br>
+				იპოვეთ \(A(5;0)\) წერტილის სიმეტრიული წერტილის კოორდინატები \(y=\sqrt{3}x\) წრფის მიმართ.
+				<div>
+                    <input type="radio" name="q14" value="ა" id="q14a"><label for="q14a">ა) \( -\frac{5}{2}; \frac{5\sqrt{3}}{2} \) </label><br>
+					<input type="radio" name="q14" value="ბ" id="q14b"><label for="q14b">ბ) \( \frac{5}{2}; \frac{5\sqrt{2}}{2}\) </label><br>
+                    <input type="radio" name="q14" value="გ" id="q14c"><label for="q14c">გ) \( -\frac{5}{2}; \frac{\sqrt{2}}{2}\)  </label><br>
+					<input type="radio" name="q14" value="დ" id="q14d"><label for="q14d">დ) \( \frac{5\sqrt{3}}{2}; -\frac{5}{2}\) </label>
+				</div>
+			</div>
+
+			<!-- Question 15 -->
+			<div class="question" id="question15">
+				<strong> (1) 15. </strong> <br>
+                გამოთვალეთ \( (\vec{a}-2\vec{b})\) და \( \vec{b}\) ვექტორების სკალარული ნამრავლი, თუ \( \vec{a}=(-1;0)\) და \( \vec{b}=(-5;1)\)
+				<div> </div>
+				<div>
+					<input type="radio" name="q15" value="ა" id="q15a"><label for="q15a"> ა) \( 18\) </label><br>
+					<input type="radio" name="q15" value="ბ" id="q15b"><label for="q15b"> ბ) \( -26 \) </label><br>
+					<input type="radio" name="q15" value="გ" id="q15c"><label for="q15c"> გ) \( 36 \) </label><br>
+					<input type="radio" name="q15" value="დ" id="q15d"><label for="q15d"> დ) \( -47 \) </label>
+				
+				</div>
+			</div>
+            <!-- Question 16 -->
+<div class="question" id="question16">
+    <strong> (1) 16. </strong> <br>
+     \( b \) პარამეტრის რა მნიშვნელობისათვის იქნება \(3x+2y-8=0\) და \(2x-by=2y-5\) 
+    განტოლებებით განსაზღვრული წრფეები ურთიერთმართობული \(Oxy\) მართკუთხა საკოორდინატო სიბრტყეში?
+    <div></div>
+    <div>
+        <input type="radio" name="q16" value="ა" id="q16a"><label for="q16a"> ა) \( -\frac{10}{3} \) </label><br>
+        <input type="radio" name="q16" value="ბ" id="q16b"><label for="q16b"> ბ) \( -\frac{4}{3} \) </label><br>
+        <input type="radio" name="q16" value="გ" id="q16c"><label for="q16c"> გ) \( 1 \) </label><br>
+        <input type="radio" name="q16" value="დ" id="q16d"><label for="q16d"> დ) \( 3 \) </label>
+    </div>
+</div>
+
+<!-- Question 17 -->
+<div class="question" id="question17">
+    <strong> (1) 17. </strong> <br>
+    პირველი წრეწირის \(60^\circ\)-იანი რკალის სიგრძე ტოლია მეორე წრეწირის \(45^\circ\)-იანი რკალის სიგრძის. 
+იპოვეთ პირველი წრეწირით შემოსაზღვრული წრის ფართობის შეფარდება მეორე წრეწირით 
+შემოსაზღვრული წრის ფართობთან. 
+    <div></div>
+    <div>
+        <input type="radio" name="q17" value="ა" id="q17a"><label for="q17a"> ა) \(\frac{3}{4} \) </label><br>
+        <input type="radio" name="q17" value="ბ" id="q17b"><label for="q17b"> ბ) \(\frac{9}{16} \) </label><br>
+        <input type="radio" name="q17" value="გ" id="q17c"><label for="q17c"> გ) \( \frac{4}{3} \) </label><br>
+        <input type="radio" name="q17" value="დ" id="q17d"><label for="q17d"> დ)  \(2\) </label>
+    </div>
+</div>
+
+<!-- Question 18 -->
+<div class="question" id="question18">
+    <strong> (1) 18. </strong> <br>
+    საკოორდინატო სიბრტყეზე მოცემული წრფის განტოლებაა \(y=5x-11\) . ეს წრფე ჰომოთეტიას ცენტრით კოორდინატთა სათავეში და კოეფიციენტით 3 გადაყავს წრფეში, რომლის განტოლებაა
+    <div></div>
+    <div>
+        <input type="radio" name="q18" value="ა" id="q18a"><label for="q18a"> ა) \(y=5x-33\) </label><br>
+        <input type="radio" name="q18" value="ბ" id="q18b"><label for="q18b"> ბ) \(y=5x+33\) </label><br>
+        <input type="radio" name="q18" value="გ" id="q18c"><label for="q18c"> გ) \(y=15x-33\) </label><br>
+        <input type="radio" name="q18" value="დ" id="q18d"><label for="q18d"> დ) \(y=\frac{5}{3}x-\frac{11}{3}\) </label>
+    </div>
+</div>
+
+<!-- Question 19 -->
+<div class="question" id="question19">
+    <strong> (1) 19. </strong> <br>
+    ზრდადი გეომეტრიული პროგრესიის პირველი \(20\) წევრის ჯამი \(50\)-ჯერ მეტია პირველი \(10\) წევრის ჯამზე. რას უდრის ამ გეომეტრიული პროგრესიის მნიშვნელი?
+    <div></div>
+    <div>
+        <input type="radio" name="q19" value="ა" id="q19a"><label for="q19a"> ა) \(\sqrt{5}\) </label><br>
+        <input type="radio" name="q19" value="ბ" id="q19b"><label for="q19b"> ბ) \(\log_2{5}\) </label><br>
+        <input type="radio" name="q19" value="გ" id="q19c"><label for="q19c"> გ) \( \sqrt[5]{7}\) </label><br>
+        <input type="radio" name="q19" value="დ" id="q19d"><label for="q19d"> დ) \(2,5\) </label>
+    </div>
+</div>
+
+<!-- Question 20 -->
+<div class="question" id="question20">
+    <strong> (1) 20. </strong> <br>
+    იპოვეთ \(y=\frac{1}{2x^2-5x+7}\) ფუნქციის უდიდესი მნიშვნელობა.
+    <div></div>
+    <div>
+        <input type="radio" name="q20" value="ა" id="q20a"><label for="q20a"> ა) \(0,5\) </label><br>
+        <input type="radio" name="q20" value="ბ" id="q20b"><label for="q20b"> ბ) \(\frac{7}{3}\) </label><br>
+        <input type="radio" name="q20" value="გ" id="q20c"><label for="q20c"> გ) \(\frac{8}{31}\) </label><br>
+        <input type="radio" name="q20" value="დ" id="q20d"><label for="q20d"> დ) \(2,3\) </label>
+    </div>
+</div>            
+</div>
+            <button id="prev" onclick="prevQuestion()" style="display:none;">წინა</button>
+            <button id="next" onclick="nextQuestion()">შემდეგი</button> <br>
+			<button type="button" id="submit-button" onclick="submitQuiz()">შემოწმება</button>
+		</form>
+    <span id="nav_quest">კითხვაზე გადასვლა</span>
+<div  id="footer-navigation" class="footer-navigation">
+    
+</div>
+		<div id="result-section" style="display: none;">
+    <div id="result"></div>
+    <div id="result-table"></div>
+</div>
+		</div>
+	</main>
+	<footer>
+
+	</footer>
+	<script src="script.js"></script>
+</body>
+
+</html>
