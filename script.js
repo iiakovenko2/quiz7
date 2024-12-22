@@ -19,14 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
         q17: "ბ",
         q18: "ა",
         q19: "გ",
-        q20: "გ"
+        q20: "გ",
+        q21: "გ",
+        q22: "ა"
     };
 
     let currentQuestion = localStorage.getItem("currentQuestion") ? parseInt(localStorage.getItem("currentQuestion")) : 1;
-    const totalQuestions = 20;
+    const totalQuestions = 22;
     const footerNavigation = document.getElementById("footer-navigation");
     const timerElement = document.getElementById("timer");
-    let timeLeft =  2700;
+    let timeLeft =  3960;
     for (let i = 1; i <= totalQuestions; i++) {
         const questionButton = document.createElement("button");
         questionButton.textContent = i;
@@ -80,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let tableContent = ""; // To store rows of the table
         document.getElementById("footer-navigation").style.display = "none";
 
-        for (let i = 1; i <= 20; i++) {
+        for (let i = 1; i <= 22; i++) {
             const studentAnswer = document.querySelector(`input[name="q${i}"]:checked`);
             const correctAnswer = correctAnswers[`q${i}`];
             const studentResponse = studentAnswer ? studentAnswer.value : "გამოტოვებული";
@@ -133,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function saveAnswers() {
         let studentAnswers = {};
-        for (let i = 1; i <= 20; i++) {
+        for (let i = 1; i <= 22; i++) {
             const studentAnswer = document.querySelector(`input[name="q${i}"]:checked`);
             studentAnswers[`q${i}`] = studentAnswer ? studentAnswer.value : null;
         }
@@ -143,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function loadAnswers() {
         let studentAnswers = JSON.parse(localStorage.getItem("studentAnswers"));
         if (studentAnswers) {
-            for (let i = 1; i <= 20; i++) {
+            for (let i = 1; i <= 22; i++) {
                 const answer = studentAnswers[`q${i}`];
                 if (answer) {
                     document.querySelector(`input[name="q${i}"][value="${answer}"]`).checked = true;
